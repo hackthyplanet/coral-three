@@ -138,8 +138,8 @@ function draw() {
 
 class dead{
   constructor(){
-    this.x = random(width)
-    this.y = random(-height/4)
+    this.x = random(-width, -width/2)
+    this.y = random(-height, -height/4)
     this.z = random(width)
     this.size = random (30, 60)
 
@@ -164,7 +164,7 @@ class dead{
 
 function coralplain(){
   
-  translate(-windowWidth/4 +300, -windowHeight/2, -400)
+  translate(-windowWidth/2, -windowHeight/2)
   push()
   rotateY(millis() / 30)
   scale(50)
