@@ -138,7 +138,7 @@ function draw() {
 
 class dead{
   constructor(){
-    this.x = random(-width, -width/2)
+    this.x = random(width, -width/2)
     this.y = random(-height, -height/4)
     this.z = random(width)
     this.size = random (30, 60)
