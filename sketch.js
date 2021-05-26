@@ -1,5 +1,5 @@
 
-let plane;
+//let plane;
 
 let tube
 
@@ -12,7 +12,7 @@ let bleach
 let crossSize = 100;
 
 let coralOne
-let coralTwo
+//let coralTwo
 
 let zoom;
 let zvel = 0;
@@ -48,17 +48,23 @@ let coralisplain = true
 let coralistextured = false
 
 
+let song
+
+
 
 ////maybe array
 let deadcoral = []
 
 
 function preload() {
-  plane = loadModel('assets/alteredplane.obj');
+  //plane = loadModel('assets/alteredplane.obj');
 
   coralOne = loadModel('assets/itlldo.obj')
 
-  coralTwo = loadModel('assets/clam.obj')
+  //coralTwo = loadModel('assets/clam.obj')
+
+  song = loadSound('assets/coral three.mp3')
+  
 
 }
 
@@ -77,7 +83,7 @@ function setup() {
   bleachtemp.loop();
   bleachtemp.hide();
 
- 
+  song.play()
 
   zoom = 1.2 * height;
 	lpos = createVector(0, 0);
